@@ -1,0 +1,363 @@
+
+h1,h2,h3{
+  color:black;
+  text-align: center;
+}
+
+body,html{
+  margin:0; 
+  padding:0;
+  height: 100%;
+}
+
+body{
+   background-color:white;
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+   
+  }
+
+header{
+    background-color: #3954a5;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    margin-top: 0;
+    width:100%; 
+    }
+
+   
+
+  .logo-container {
+      display: flex;
+      align-items: center;
+    
+  }
+
+  .logo {
+      height: 100px;
+      margin-right: 0px;
+      margin-left:20px;
+  }
+
+  .logo-text {
+      font-size: 25px;
+      font-weight: bold;
+      color:white;
+      width:100px;
+      margin-left:0px;
+      padding-left:0px;
+  }
+
+
+
+/* Search Bar */
+.search-container{
+  display: right;
+  align-items: right ;
+}
+
+.search-bar {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  width: 200px;
+  transition: width 0.3s;
+  margin-right: 10px;
+  background-color: white;
+  
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  width: 250px;
+}
+      
+       /* Navigation */
+       nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding:10px;
+        top:0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-family:'Times New Roman', Times, serif;
+        font-style:impact;
+        font-size: 1.2rem;
+        padding:0;
+        margin:0;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      border-bottom:2px solid white;
+      box-sizing: border-box;
+      line-height: 10px;
+    }
+
+
+    /* Sample Content to demonstrate scrolling */
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+      margin-bottom: 20px;
+      
+    }
+
+    .content h2 {
+      font-size: 2.5rem;
+      color: black;
+    }
+
+    .content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 20px auto;
+      color: black;
+    }
+
+  footer{
+      background-color: #3954a5;
+      padding: 20px 0;
+      text-align: center;
+       margin-top: auto;
+ }
+
+ footer a {
+    display: inline-block;
+    margin: 0 10px;
+  ;
+  }
+
+  footer img {
+    width: 24px;
+    height: auto;
+    filter: brightness(0) invert(1);
+  }
+
+  .featured-items {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .featured-header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 10;
+  }
+  .newest-releases {
+    font-size: 2rem;
+    color:black;
+    margin: 0;
+  }
+  .item-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    background-color:rgba(0, 100, 150, 0.4);
+    color:black;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+.item-container li {
+  list-style: none;
+}
+
+.item-container a {
+  text-decoration: none;
+}
+
+  .item img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0; 
+  }
+
+  .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .surrounding{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;;
+     }
+
+  .book-box { 
+    text-align: center;
+    background: rgba(0, 100, 150, 0.4);
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:150px;
+}
+.book-box img {
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+}
+.book-box a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.book-box a:hover {
+    background-color: #0056b3;
+}
+.book-download{
+  background-color:#0056b3;
+  height:30px;
+  width:100px;
+
+}
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 20px auto;
+  color: black;
+}
+
+.box {
+  background-color:rgba(0, 100, 150, 0.4);
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; 
+  color: inherit; 
+  display: inline-block;
+}
+.box a {
+  text-decoration: none;
+  margin:0;
+  padding:0;
+}
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box h3 {
+  align-items: center;
+  color:blue;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  background:transparent;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  }
+
+  input::placeholder{
+    color:black;
+  }
+  
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+input, textarea, select {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #218838;
+}
+input[type="date"] {
+  padding: 5px;
+  margin: 10px 0;
+}
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: black;
+}
+
+.submit{
+  background-color: #0277BD;
+}
+.submit:hover{
+  background-color:  rgba(0, 150, 180, 0.3) ;
+}
