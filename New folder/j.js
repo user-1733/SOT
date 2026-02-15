@@ -42,24 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const studentLoginErrorDiv = document.getElementById('studentLoginError');
 
     if (studentLoginForm) {
-        studentLoginForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const studentIdInput = this.querySelector('#studentId');
-            const gradeSelect = this.querySelector('#gradeSelect');
-            const branchSelect = this.querySelector('#branchSelect');
+    studentLoginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
 
-            if (!studentIdInput.value.trim()) {
-                displayStudentError('Please enter your Student ID.');
-                return;
-            }
-            if (!gradeSelect.value) {
-                displayStudentError('Please select your Grade.');
-                return;
-            }
-            if (!branchSelect.value) {
-                displayStudentError('Please select your Branch.');
-                return;
-            }
+        displayStudentSuccess('Student login successful!');
+        hideLoginArea();
+        showMainContent();
+    });
+}
+
+          
 
             if (studentIdInput.value.trim() === '00410' && gradeSelect.value === 'grade10' && branchSelect.value === 'BE') {
                 console.log('Successful login for Student ID: 00410, Grade: 10, Branch: BE');
@@ -71,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Failed login attempt with Student ID:', studentIdInput.value, 'Grade:', gradeSelect.value, 'Branch:', branchSelect.value);
             }
         });
-    }
+    
     function displayStudentError(message) {
         if (studentLoginErrorDiv) {
             studentLoginErrorDiv.textContent = message;
@@ -244,4 +236,3 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});

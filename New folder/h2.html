@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School of Tomorrow E-learning</title>
+    <link rel="stylesheet" href="c.css">
+    <style>
+        /* Any inline styles you might have will go here. */
+        /* Consider moving them to c.css for better organization. */
+        .forum-questions {
+            display: none; /* Initially hidden */
+            margin-top: 15px; /* Add some space above the forum questions */
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .forum-questions h4 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .forum-questions ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .forum-questions li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .forum-questions a {
+            display: inline-block;
+            background-color: #5cb85c; /* Example green color for the forum link */
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .forum-questions a:hover {
+            background-color: #4cae4c;
+        }
+
+        .logo {
+      height: 100px;
+      margin-right: 0px;
+      margin-left:20px;
+  }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img class="logo" src="sot 2.jpg" alt="School of Tomorrow Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">My progress</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <main>
+       <section class="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="course-grid">
+
+                <div class="course-card biology-course">
+                    <img src="biology.png" alt="Biology Course">
+                    <div class="course-info">
+                        <h3>Biology - Grade 10</h3>
+                        <p>Cell Biology</p>
+                        <div class="course-content">
+                            <div class="topic">
+                                <h4>Phases of Cell Division</h4>
+                                <div class="sub-topic">
+                                    <h5>Interphase</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="view-course-button">View Course</a>
+                        <div class="forum-questions biology-forum">
+                            <h4>Biology Forum Questions</h4>
+                            <ul>
+                                <li>What are the main stages of mitosis?</li>
+                                <li>How does cytokinesis differ in plant and animal cells?</li>
+                            </ul>
+                            <a href="#">Go to Biology Forum</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card chemistry-course">
+                    <img src="chemistry.png" alt="Chemistry Course">
+                    <div class="course-info">
+                        <h3>Chemistry - Grade 10</h3>
+                        <p>Electrochemistry</p>
+                        <div class="course-content">
+                            <div class="topic">
+                                <h4>Types of Cells</h4>
+                                <div class="sub-topic">
+                                    <h5>Voltaic Cell</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="view-course-button">View Course</a>
+                        <div class="forum-questions chemistry-forum">
+                            <h4>Chemistry Forum Questions</h4>
+                            <ul>
+                                <li>Explain the function of a salt bridge in a voltaic cell.</li>
+                                <li>What is the difference between electrolysis and a galvanic cell?</li>
+                            </ul>
+                            <a href="#">Go to Chemistry Forum</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card citizenship-course">
+                    <img src="civics.png" alt="Citizenship Course">
+                    <div class="course-info">
+                        <h3>Citizenship - Grade 10</h3>
+                        <p>Federalism</p>
+                        <div class="course-content">
+                            <div class="topic">
+                                <h4>Types of Federalism</h4>
+                                <div class="sub-topic">
+                                    <h5>Cooperative Federalism</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="view-course-button">View Course</a>
+                        <div class="forum-questions citizenship-forum">
+                            <h4>Citizenship Forum Questions</h4>
+                            <ul>
+                                <li>What are the advantages of a federal system?</li>
+                                <li>Describe a situation where cooperative federalism is essential.</li>
+                            </ul>
+                            <a href="#">Go to Citizenship Forum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 School of Tomorrow E-learning. All rights reserved.</p>
+            <div class="social-links">
+
+                <a href="https://www.Telegram.com" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                    <img src="Telegram icon.png" alt="Telegram Icon">
+                </a>
+                <a href="https://www.Youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <img src="YouTube icon.png" alt="YouTube Icon">
+                </a>
+                <a href="https://www.Twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <img src="X icon.png" alt="X Icon">
+                </a>
+                <a href="https://www.Linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="linkedin icon.png" alt="LinkedIn Icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="j.js"></script>
+
+</body>
+</html>
